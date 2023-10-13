@@ -47,3 +47,6 @@ class Birds(Resource):
         return make_response(jsonify(birds), 200)
 
 api.add_resource(Birds, '/birds')
+
+if __name__ == '__main__':
+    app.run(debug=False)
