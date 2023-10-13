@@ -1,0 +1,7 @@
+Flask 
+gunicorn 
+psycopg2-binary 
+Flask-SQLAlchemy 
+Flask-Migrate 
+SQLAlchemy-Serializer
+Flask-RESTful

@@ -37,8 +37,8 @@ api = Api(app)
 # adding a custom non-restful route
 @app.route('/')
 def home():
-    return {'message': 'welcome to homepage'}, 200
-    # return '<h1>Welcome to my page!</h1>'
+    # return {'message': 'welcome to homepage'}, 200
+    return '<h1>Welcome to my page!</h1>'
 
 class Birds(Resource):
 
