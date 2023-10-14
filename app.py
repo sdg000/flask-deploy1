@@ -56,6 +56,7 @@ class Birds(Resource):
         return make_response(jsonify(birds), 200)
     
 
+# Resource for Deleting , Updating or getting Bird by ID
 class BirdByID(Resource):
 
     def get(self, id):
@@ -63,7 +64,7 @@ class BirdByID(Resource):
         if bird:
             return bird.to_dict(), 200
         
-        return 'Bird not found', 401
+        return {'message': 'Not found'}, 401
 
 api.add_resource(Birds, '/birds')
 api.add_resource(BirdByID, '/birds/<int:id>')
